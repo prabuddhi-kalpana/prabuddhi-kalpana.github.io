@@ -1,0 +1,199 @@
+---
+---
+
+@charset "utf-8";
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Slab:wght@400;700&display=swap');
+
+/* Variables */
+$serif: 'Roboto Slab', serif;
+$sans-serif: 'Open Sans', sans-serif;
+$monospace: Monaco, Consolas, "Lucida Console", monospace;
+
+$primary-color: #0077CC;
+$link-color: #0077CC;
+$link-color-hover: darken($link-color, 15%);
+$text-color: #333333;
+$light-gray: #f3f6f9;
+$dark-gray: #666666;
+$border-color: #ddd;
+
+/* Import partials */
+@import "minimal-mistakes/variables";
+@import "minimal-mistakes/notices";
+@import "minimal-mistakes/mixins";
+@import "minimal-mistakes/vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+@import "minimal-mistakes/vendor/magnific-popup/magnific-popup";
+@import "minimal-mistakes/vendor/susy/susy";
+@import "minimal-mistakes/mixins";
+@import "minimal-mistakes/reset";
+@import "minimal-mistakes/base";
+@import "minimal-mistakes/forms";
+@import "minimal-mistakes/tables";
+@import "minimal-mistakes/animations";
+@import "minimal-mistakes/buttons";
+@import "minimal-mistakes/notices";
+@import "minimal-mistakes/masthead";
+@import "minimal-mistakes/navigation";
+@import "minimal-mistakes/footer";
+@import "minimal-mistakes/syntax";
+@import "minimal-mistakes/utilities";
+@import "minimal-mistakes/print";
+
+/* Custom styles */
+body {
+  font-family: $sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: $text-color;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+}
+
+.page__content {
+  p, li {
+    font-size: 1em;
+    line-height: 1.7;
+  }
+}
+
+.sidebar {
+  font-family: $sans-serif;
+  
+  .author__name {
+    font-family: $serif;
+    font-weight: 700;
+  }
+  
+  .author__bio {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}
+
+.archive__item-title {
+  font-family: $serif;
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+.archive__item-excerpt {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.page__meta {
+  font-size: 0.8em;
+  color: $dark-gray;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1.3em;
+  }
+  
+  .sidebar {
+    padding: 1em;
+  }
+}
+
+/* Publication styling */
+.publication-item {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $border-color;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  .publication-title {
+    font-weight: 700;
+    margin-bottom: 0.3em;
+  }
+  
+  .publication-authors {
+    font-style: italic;
+    margin-bottom: 0.3em;
+  }
+  
+  .publication-venue {
+    color: $dark-gray;
+    font-size: 0.9em;
+  }
+}
+
+/* Blog post styling */
+.post-item {
+  margin-bottom: 1.5em;
+  
+  .post-title {
+    margin-bottom: 0.2em;
+  }
+  
+  .post-date {
+    color: $dark-gray;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+  }
+}
+
+/* Card-like styling for items */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+}
