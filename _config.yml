@@ -8,17 +8,16 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Research & Blog"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Prabuddhi Kalpana"
 description              : &description "Research and Blog Website"
-url                      : https://muname.github.io # the base hostname & protocol for your site
+url                      : https://prabuddhi-kalpana.github.io # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "muname/muname.github.io"
 
 # Site Author
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Name"
+  name             : "Prabuddhi Kalpana"
   pronouns         : # example: "she/her"  
   bio              : "Researcher & Writer"
   location         : "Location"
