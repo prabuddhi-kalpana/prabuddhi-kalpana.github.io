@@ -1,1 +1,1 @@
-# Yuchen Jin website
+# Prabuddhi's personal website
